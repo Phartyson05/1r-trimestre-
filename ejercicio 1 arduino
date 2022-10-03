@@ -1,0 +1,7 @@
+Conectamos en cable negro del GND hacia el negativo y el cable rojo del +5V hacia el positivo de la protoboard.
+
+Despues conectamos la resistencia en el positivo hacia el uqe sea y el cable negro en el negativo hacia la misma linia que la resistencia.
+
+Conectamos el led en frente de la resistencia y el cable negro.
+
+Y para terminar le damos corriente para que el led  se encienda.
