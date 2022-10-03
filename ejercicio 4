@@ -1,0 +1,15 @@
+Primero tenemos que desconectar la corriente del arduino para que no haya ningun corto circuito.
+
+Conecctamos el cable rojo del +5V al positivo y el cable negro del GND al negativo.
+
+Ponemos la resistencia del positivo al primer extremo de un cable y al primer pulsador.
+
+Despues el segundo extremo de ese cable lo conectamos al primero del segundo pulsador.
+
+Conectamos un cable pequeño del primer extremo del segundo pulsador al primer extremo del el led.
+
+A la vez que conectamos un cable grande que va del segundo extremo del primer pulsador al primer extremo del led.
+
+Para que cuando pulsemos el boton de un pulsador sea independiante y no haga falta presionar los dos.
+
+Y por ultimo conectamos un cable que vaya del lado negatio al segundo extremo del led para que se encienda  al presionar el pulsador.
