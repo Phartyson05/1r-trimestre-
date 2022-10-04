@@ -1,0 +1,38 @@
+Primero desconectamos la corriente del arduino para que no haya ningun corto circuito.
+
+Conectamos el cable negro del +5V al positivo y el cable rojo del GND al negativo.
+
+Colocamos el ptenciometro sola la protoboard ylo conectamos a un lado a los 5V y el otro a la toma de tierra.
+
+En el servo motor hay tres cables , uno es el de corriente el otro el de tierra y el ultimo el el de control.
+
+Conectamos las cubiertas a la protoboard de forma que cada entrada este en una fila diferente.
+
+
+Conecta la toma de 5V al cable rojo, la toma de tierra al cable negro, y el cable blanco a la clavija 9.
+
+Colocamos un condensador de 100uf entre la corriente y la toma de tierra justo al lado de las cubiertas de contacto.
+
+Tambien puedes colocar un condensador entre la corriente y la tierra conectadas a tu potenciometro.
+
+Por ultimo colocamos el codigo en el arduino.
+
+#include <Servo.h>
+Servo myServo;
+int const potPin = A0;
+int potVal;
+int angle;
+void setup() {
+ myServo.attach(9);
+Serial.begin(9600);
+}
+void loop() {
+ potVal = analogRead(potPin); 
+Serial.print("potVal: ");
+Serial.print(potVal);
+angle = map(potVal, 0, 1023, 0, 179);
+Serial.print(", angle: ");
+Serial.println(angle);
+myServo.write(angle);
+delay(10);
+}
