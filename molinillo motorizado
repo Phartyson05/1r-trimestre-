@@ -1,0 +1,47 @@
+Desconectamos la toma de corriente de la protoboard.
+
+Añadimos un pulsador a la protoboard conectando a un lado la toma de corriente y el otro cable a la clavija digital 2 del arduino.
+
+Añadimos una resistencia pull-down a la clavija de la salida del interruptor.
+
+Conectamos una bateria el cable negro al negativo y el rojo al positivo.
+
+Colocamos un transitor en el protoboar junto a un cable que va de la clavija 9 a al primera entrada del transitor, un segundo cable que va del negativo a la tercera entrada del transitor.
+
+Conectamos el motor el, el cable rojo en el positivo, el cable negro en el lado derecho de la protoboard numero 26 letra g.
+
+Conetamos un diodo 1N4007 del positivo a detras de el cable negro del motor.
+
+Y otro cable que va delante del cable negro del motor a la entrada del medio del transitor.
+
+Colocamos un cable puente del negativo al otro lado negativo.
+
+Y ponemos el codigo.
+
+
+
+const int DAVID = 2;
+const int switchPin = 3;
+const int motorPin = 9;
+const int X = 4;
+int switchState = 0;
+
+void setup () {
+  pinMode(motorPin, OUTPUT);
+  pinMode(DAVID, INPUT);
+  pinMode(switchPin, INPUT);
+  pinMode(X,OUTPUT);
+}
+
+void loop(){
+  switchState = digitalRead(switchPin) && digitalRead(DAVID);
+ 
+  if (switchState == HIGH) {
+    digitalWrite(motorPin, HIGH);
+    digitalWrite(X, HIGH);
+  }
+  else {
+    digitalWrite(motorPin, LOW);
+   digitalWrite(X, LOW);
+  }
+} 
