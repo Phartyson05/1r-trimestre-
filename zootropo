@@ -1,3 +1,30 @@
+Desconectamos la corriente del la protoboard.
+
+Conectamos dos pulsadores junto a dos cables q los acompañan des del lado positivo, y otros dos del lado 3 y 4 del arduino.
+
+Añadimos dos resisencias cada una de 10Kohm en el otro lado de la protoboard a la segunda entrada del los pulsadores.
+
+Conectamos el potenciometro a la protoboard, conectamos un cable des de A0 a la entrada central del potencimetro.
+
+En las otras dos entradas conectamos dos cables uno en el positivo y el otro en el negativo.
+
+Cnectamos el puente H sobre la protoboard de manera que los dos lados queden centrados.
+
+Conectamos la clavija 1 del puente H a la clavija digital 9 del arduino.
+
+Conectamos la clavija 2 del puente H a la clavija dijital 3 del arduino.
+
+Conectamos la clavija 7 del puente H a la clavija digital 2 del arduino.
+
+En la clavija 3 del puente H conectamos el cable negro del motor, en la clavija 4 y 5 del puente H conectamos dos cables des del lado negativo.
+
+En la clavija 6 del puente H conectamos el otro cable del motor, el cable rojo.
+
+Conectamos un cable que va del lado positivo al la ultima clavija del puente H.
+
+Y por ultimo conectamos la bateria, el cable negro en el negativo y el rojo en el poritivo.
+
+
 const int controlPin1 = 2;
 const int controlPin2 = 3;
 const int enablePin = 9;
