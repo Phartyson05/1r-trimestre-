@@ -1,3 +1,14 @@
+Des conectamos la corriente de la protoboard.
+
+Conetamos seis leds junto a seis cables que vayan de la clavija 2 a la 7 en el arduino dejando dos enspacions entre led y led.
+
+Conectamos una resistencia por led de 220ohmios.
+
+Conectamos el interruptor de inclinacion con un cable conectado en el numero 8 del arduino,  una resistencia de 10hiloohm.
+
+Y por ultimo colocamos el codigo.
+
+
 const int switchPin = 8;
 unsigned long previousTime = 0;
 int switchState = 0;
