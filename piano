@@ -1,3 +1,18 @@
+Desconectamos la protoboard de la corriente.
+
+Colocamos los interruptores en la protoboard de forma que queden alineadas con un espacio de seperacion entre una y otra.
+
+Colocamos 3 cables de forma que conectemos todos los pulsadores entre si.
+
+Ponemos una resistencia de 220Ohm en el primer pulsador, otra de 10KOhm en el segundo, otra de 1MegOhm en el tercero.Y en el cuarto conectamos un cable del A0 a la segunda entrada del pulsador junto a una resistencia de 10KOhm.
+
+Conectamos el piezo, un cable que salga del negativo al primer lado del piezo. 
+
+Y un segundo cable que va del lado 8 del arduino al segundo lado del piezo.
+
+Y por ultimo colocamos el codigo para que todo funcione.
+
+
 int notes[] = {262,294,330,349};
 void setup() {
  Serial.begin(9600); 
