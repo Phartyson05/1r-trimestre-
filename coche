@@ -1,4 +1,22 @@
+Desconectamos la corriente del arduino.
 
+Añadimos otra protoboard debajo de la que teniamos para simular el coche.
+
+Conectamos las protoboard con los polos negativo y positivo.
+
+Conectamos cuatro moteres CC en las clavijas del arduino 10, 11, 12 y 13.
+
+Los colocamos en cada extremo de las protoboard simulando que son las ruedas.
+
+Junto a cada motor añadimos los transitores y los diodos 
+
+En el centro del protoboard conectamos un pulsador que controle los 4 motores.
+
+Le conectamos su resistencia de 10K y un cable que vaya de su segunda clavija a la clavija del arduino numero 2.
+
+Conectamos una bateria al positivo y negativo para darle la potencia a los motores.
+
+Y po ultimo conectamos el codigo.
 
 
 
